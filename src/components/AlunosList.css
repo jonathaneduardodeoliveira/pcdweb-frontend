@@ -1,0 +1,20 @@
+.aluno-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.aluno-item:hover {
+  background-color: #eaeaea; /* Destaque ao passar o mouse */
+}
+
+.aluno-details {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
