@@ -22,7 +22,7 @@ const Cadastro = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://4036-177-51-170-231.ngrok-free.app/alunos/cadastrar', {
+      const response = await axios.post('https://eb6c-177-51-170-231.ngrok-free.app/alunos/cadastrar', {
         nomeCompleto: formData.nomeCompleto,
         email: formData.email,
         telefone: formData.telefone,

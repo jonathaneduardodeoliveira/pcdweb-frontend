@@ -15,7 +15,7 @@ const Secretaria = () => {
           throw new Error('Token não encontrado. Faça login.');
         }
 
-        const response = await axios.get('https://4036-177-51-170-231.ngrok-free.app/alunos/listar', {
+        const response = await axios.get('https://eb6c-177-51-170-231.ngrok-free.app/alunos/listar', {
           headers: { Authorization: `Bearer ${token}` }
         });
         setAlunos(response.data);

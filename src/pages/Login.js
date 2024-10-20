@@ -12,7 +12,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://4036-177-51-170-231.ngrok-free.app/alunos/login', { email, senha });
+      const response = await axios.post('https://eb6c-177-51-170-231.ngrok-free.app/alunos/login', { email, senha });
       localStorage.setItem('token', response.data.token);
       alert('Login realizado com sucesso!');
 
