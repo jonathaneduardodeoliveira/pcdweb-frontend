@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/pcdweb-frontend/static/css/main.4314e9be.css",
+    "main.js": "/pcdweb-frontend/static/js/main.60d0d976.js",
+    "index.html": "/pcdweb-frontend/index.html",
+    "main.4314e9be.css.map": "/pcdweb-frontend/static/css/main.4314e9be.css.map",
+    "main.60d0d976.js.map": "/pcdweb-frontend/static/js/main.60d0d976.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4314e9be.css",
+    "static/js/main.60d0d976.js"
+  ]
+}
