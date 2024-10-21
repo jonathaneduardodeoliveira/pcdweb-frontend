@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom';
 const EscolhaCurso = () => {
     const navigate = useNavigate();
     
-    // Estado para armazenar a lista de cursos
     const [cursos] = useState([
         { id: 1, nome: 'Bootcamp Engenharia de Software', url: 'https://ead.devstars.tech/cursos/bootcamp-engenharia-de-software-turma-03-04-e-05-prof-moab-macena/' },
         { id: 2, nome: 'Curso de Assistente Administrativo', url: 'https://ead.devstars.tech/cursos/curso-de-assistente-administrativo/' },
@@ -26,16 +25,15 @@ const EscolhaCurso = () => {
 
     const buscarCurso = () => {
         console.log('Buscar curso');
-        // Aqui você pode adicionar a lógica para buscar um curso específico, se necessário
     };
 
     return (
         <div>
-            <h1>Escolha o seu Curso</h1> {/* Título principal da página */}
+            <h1>Escolha o seu Curso</h1>
             <button onClick={buscarCurso}>Buscar Curso</button>
 
             <div style={{ margin: '20px 0' }}>
-                <h2>Cursos Relacionados à Informática</h2> {/* Seção relacionada à informática */}
+                <h2>Cursos Relacionados à Informática</h2>
                 <ul>
                     <li>
                         <h3>
@@ -99,7 +97,7 @@ const EscolhaCurso = () => {
                     </li>
                 </ul>
 
-                <h2>Outros Cursos</h2> {/* Seção para outros cursos */}
+                <h2>Outros Cursos</h2>
                 <ul>
                     <li>
                         <h3>
