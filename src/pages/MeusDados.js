@@ -8,7 +8,7 @@ const MeusDados = () => {
     const fetchDados = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get('https://eb6c-177-51-170-231.ngrok-free.app/alunos/meus-dados', {
+        const response = await axios.get('http://localhost:3000/alunos/meus-dados', {
           headers: {
             Authorization: `Bearer ${token}`,
           },

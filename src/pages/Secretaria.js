@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import './Secretaria.css'; // Adicione este CSS para estilização
 
 const Secretaria = () => {
   const [alunos, setAlunos] = useState([]);
@@ -15,7 +16,7 @@ const Secretaria = () => {
           throw new Error('Token não encontrado. Faça login.');
         }
 
-        const response = await axios.get('https://eb6c-177-51-170-231.ngrok-free.app/alunos/listar', {
+        const response = await axios.get('http://localhost:3000/alunos/listar', {
           headers: { Authorization: `Bearer ${token}` }
         });
         setAlunos(response.data);
@@ -31,6 +32,10 @@ const Secretaria = () => {
 
   const handleAlunoClick = (aluno) => {
     setSelectedAluno(aluno);
+  };
+
+  const clearSelection = () => {
+    setSelectedAluno(null);
   };
 
   if (loading) {
@@ -61,6 +66,7 @@ const Secretaria = () => {
           <p><strong>Escolaridade:</strong> {selectedAluno.escolaridade}</p>
           <p><strong>RG:</strong> {selectedAluno.documentos?.rg}</p>
           <p><strong>CPF:</strong> {selectedAluno.documentos?.cpf}</p>
+          <button onClick={clearSelection}>Voltar à lista</button>
         </div>
       )}
     </div>
